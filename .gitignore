@@ -1,0 +1,55 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.python-version
+.ipynb_checkpoints/
+
+# ---- Model weights, adapters, checkpoints ----
+models/
+checkpoints/
+outputs/
+runs/
+export/merged/
+*.safetensors
+*.bin
+*.gguf
+*.pt
+*.pth
+adapter_model*
+!**/adapter_config.json
+
+# ---- Hugging Face / torch caches ----
+.cache/
+hf_cache/
+.hf_home/
+*.lock
+
+# ---- Data ----
+# Datasets are tracked deliberately, not by accident.
+# Raw scraped/collected material and anything with personal data stays local.
+data/raw/
+data/private/
+data/**/*.tmp
+
+# ---- Logs, reports, metrics ----
+logs/
+*.log
+wandb/
+eval/reports/
+train/metrics/*.csv
+
+# ---- Agent / tooling state ----
+.omc/
+.serena/
+.claude/settings.local.json
+
+# ---- OS / editor ----
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
