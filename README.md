@@ -19,6 +19,7 @@ external API calls in the runtime pipeline.
 
 | Doc | What's in it |
 |---|---|
+| [**`PLAN.md`**](PLAN.md) | **Start here.** Phased project plan — two parallel tracks (data and engineering), the two gates that control sequencing, done-criteria per phase, success criteria, and known risks |
 | [`docs/REVIEW-FINDINGS.md`](docs/REVIEW-FINDINGS.md) | Full pre-build review — environment verification, six factual corrections to the original brief, pinned dependency versions for Blackwell/sm_120, VRAM math, evaluation methodology, and revised success criteria |
 | [`docs/DATA-SOURCES.md`](docs/DATA-SOURCES.md) | What Kuwaiti dialect data actually exists, verified live — including which named corpora are unavailable and what to use instead |
 | [`docs/WRITE-THESE.md`](docs/WRITE-THESE.md) | Native-speaker writing worksheet for producing real Kuwaiti training and evaluation data |
