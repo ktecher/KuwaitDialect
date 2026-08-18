@@ -90,6 +90,21 @@ Runs on the assembled corpus *before* any GPU time.
 > marker-dense than how Kuwaitis write**. Worse, KFI — built from the same word list — would have
 > scored that caricature as success. A row containing **چان** scores zero, because چان isn't on the list.
 
+> ### 🚧 BLOCKER — the marker list is UNVALIDATED
+> The author (native speaker) flagged that several markers looked Saudi rather than Kuwaiti. Measured
+> across QADI's Gulf labels — **he was right, and it's worse than that.** Of 22 markers, only **2**
+> discriminate Kuwaiti (چذي 4.73×, جذي 2.14×). Ten are pan-Gulf with no discriminative power. **Nine
+> belong to other dialects:** `هالحين` is Saudi, `مب`/`موب` are Emirati, `شنو`/`اكو`/`ماكو`/`سالفة`/`عبالي`
+> are Iraqi, and `گال` — treated as a Kuwaiti marker — appears **zero times** in 40,442 Kuwaiti rows.
+>
+> **Everything depending on this list is blocked pending native review:** the KFI band, Gate C's
+> anti-markers, the best-of-N marker term, and cross-Gulf discrimination. Full table in
+> [`docs/evidence/marker_discrimination.md`](docs/evidence/marker_discrimination.md).
+>
+> The structural conclusion survives regardless: the only strong signals in the entire list are the
+> **orthographic** چ/ج variants — confirming that Kuwaiti-ness lives in morphology and spelling, not
+> vocabulary.
+
 **The gate is inverted.** Markers are now a **veto**, not a requirement:
 - ❌ Reject on **anti-markers**: `ازاي`/`كده` (Egyptian), `هلق`/`شو` (Levantine), `ابغى`/`ايش` (Saudi), `هسه` (Iraqi)
 - ✅ **No pro-marker requirement per row.** Kuwaiti-ness lives in morphology, orthography and syntax — not a 22-word list
